@@ -1,0 +1,136 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-left, .nav-right {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.nav-left a{
+    float: left;
+    text-decoration: none;
+    padding: 10px 64px;
+    pointer-events: none;
+}
+
+.nav-right ul li{
+    float: right;
+    list-style: none;
+    padding: 10px 64px;
+}
+
+.nav-right ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    color: gray
+}
+
+.nav-right ul li a::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: black;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    background: linear-gradient(45deg, white, black) left/0% 100% no-repeat;
+}
+
+.nav-right ul li a:hover::after{
+    background-size: 100% 100%;
+}
+
+.nav-a.a-active{
+    color: black;
+    font-weight: 500;
+}
+
+.nav-a.a-active::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: black;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    background: linear-gradient(45deg, white, black) left/100% 100% no-repeat;
+}
+
+a:link{
+    color:black;
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    color:black;
+}
+a:focus{
+    color:black;
+}
+a:active{
+    color:black;
+}
+
+.projectbox {
+    padding: 64px 64px;
+    gap: 2%;
+    grid-template-columns: 32% 32% 32%;
+    font-size: 18px;
+}
+
+.b-inactive {
+    display: none;
+}
+
+.grid-1{
+    text-align: left;
+}
+
+.grid-1 img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.b-active {
+    display: grid;
+}
+
+.infobox {
+    padding: 64px 64px;
+    gap: 2%;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+
+
+
