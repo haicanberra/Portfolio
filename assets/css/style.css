@@ -92,7 +92,7 @@ p {
 
 .cell .cell-wrap>.project-info span {
     font-size: 15px;
-    padding: 15px, 30%;
+    padding: 30%, 15px;
     /* text-transform: uppercase; */
     /* letter-spacing: 0.2rem; */
 }
