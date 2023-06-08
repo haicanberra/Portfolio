@@ -12,7 +12,7 @@ fetch(apiUrl)
             const repoTitle = repo.name;
             const repoDescription = repo.description ? repo.description.replace(/:white_check_mark:/g, "✅") : "";
             const repoLink = repo.html_url;
-            const thumbnailUrl = `${repo.html_url}/raw/master/thumbnail.png`;
+            const thumbnailUrl = `${repo.html_url}/raw/main/thumbnail.png`;
 
             const repoHtml = `
         <div class="cell col-sm-6 col-md-4 col-lg-4 mb-4">
