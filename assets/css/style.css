@@ -148,3 +148,8 @@ a.nav-item.current {
     text-decoration: none;
     background: #000;
 }
+
+.small-img {
+    width: 75%;
+    height: auto;
+}
