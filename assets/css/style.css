@@ -1,0 +1,153 @@
+body {
+    font-family: monospace;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+    font-family: sans-serif;
+}
+
+.custom-navbar {
+    padding-top: 50px;
+    width: 100%;
+}
+
+@media (max-width: 780px) {
+    .custom-navbar>.container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.7rem;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+.cell {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.cell .cell-wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.cell .cell-wrap:after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.cell .cell-wrap img {
+    transition: 0.3s transform ease;
+    transform: scale(1);
+}
+
+.cell .cell-wrap>.project-info {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    transition: 0.3s all ease;
+}
+
+.cell .cell-wrap>.project-info h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.cell .cell-wrap>.project-info span {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.cell .cell-wrap:hover {
+    text-decoration: none;
+}
+
+.cell .cell-wrap:hover img {
+    transform: scale(1.1);
+}
+
+.cell .cell-wrap:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cell .cell-wrap:hover .project-info {
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+
+a.nav-item {
+    text-decoration: None;
+    font-size: 25px;
+    color: #888;
+}
+
+a.nav-item.current {
+    color: #000;
+}
+
+.download-btn {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    transition: 0.2s all ease;
+    font-weight: 700;
+}
+
+.download-btn:active,
+.download-btn:focus,
+.download-btn:hover {
+    outline: none;
+}
+
+.download-btn:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+}
