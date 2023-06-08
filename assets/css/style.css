@@ -93,7 +93,7 @@ p {
 .cell .cell-wrap>.project-info span {
     font-size: 15px;
     /* text-transform: uppercase; */
-    letter-spacing: 0.2rem;
+    /* letter-spacing: 0.2rem; */
 }
 
 .cell .cell-wrap:hover {
