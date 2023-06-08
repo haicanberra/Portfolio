@@ -79,7 +79,8 @@
                 let htmlSnippet = "";
                 repos.forEach(repo => {
                     const repoTitle = repo.name.replace(/-/g, " ");;
-                    const repoDescription = repo.description ? repo.description.replace(/:white_check_mark:/g, "✅") : "";
+                    // const repoDescription = repo.description ? repo.description.replace(/:white_check_mark:/g, "✅") : "";
+                    const repoDescription = repo.description.replace(/:white_check_mark:/g, "");
                     const repoLink = repo.html_url;
                     const thumbnailUrl = `${repo.html_url}/raw/main/thumbnail.png`;
 
