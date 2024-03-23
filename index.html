@@ -6,26 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Manh Hai Hoang</title>
 
-    <link rel="stylesheet" href="assets/aos/aos.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="favicon.ico">
-
+    <!-- Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap's -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="favicon.ico">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-light custom-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Manh Hai Hoang</a>
-            <span>
-                <a class="nav-item current px-5" href="index.html" id="projects"
-                    onclick="opennav('projects')">Projects</a>
-
-                <a class="nav-item" href="about.html" id="about" onclick="opennav('about')">About</a>
-            </span>
+            <div class="d-flex flex-grow-1">
+                <a class="navbar-brand" href="index.html">Manh Hai Hoang</a>
+            </div>
+            <div class="navbar-collapse flex-grow-1 text-center" id="myNavbar7">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link current" href="index.html" id="projects"
+                            onclick="opennav('projects')">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" id="about" onclick="opennav('about')">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li> -->
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -86,7 +106,7 @@
                     // const repoDescription = repo.description ? repo.description.replace(/:white_check_mark:/g, "✅") : "";
                     const repoDescription = repo.description.replace(/:white_check_mark:/g, "");
                     const repoLink = repo.html_url;
-                    const thumbnailUrl = `${repo.html_url}/raw/main/thumbnail.png`;
+                    const thumbnailUrl = `${repo.html_url}/raw/main/assets/thumbnail.png`;
 
                     const repoHtml = `
         <div class="cell col-sm-6 col-md-4 col-lg-4 mb-4">
