@@ -52,12 +52,12 @@
     <section class="section">
         <div class="container">
             <div class="row mb-5 align-items-end">
-                <div class="col-md-6" data-aos="fade-up">
+                <div class="col-md-6" data-aos="fade-right">
                     <h2>Projects</h2>
                     <p class="mb-0">Freshly fetched from my GitHub!</p>
                 </div>
             </div>
-            <div class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+            <div class="row no-gutter">
                 <!-- <div class="cell col-sm-6 col-md-4 col-lg-4 mb-4">
                     <a href="TEMP" class="cell-wrap">
                         <div class="project-info">
@@ -127,8 +127,8 @@
                 const existingRow = sectionContainer.querySelector('.row.no-gutter');
                 const newRow = document.createElement('div');
                 newRow.classList.add('row', 'no-gutter');
-                newRow.setAttribute('data-aos', 'fade-up');
-                newRow.setAttribute('data-aos-delay', '200');
+                newRow.setAttribute('data-aos', 'fade-up-right');
+                // newRow.setAttribute('data-aos-delay', '2000');
                 newRow.innerHTML = htmlSnippet;
                 sectionContainer.replaceChild(newRow, existingRow);
             })

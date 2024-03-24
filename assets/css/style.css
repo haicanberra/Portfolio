@@ -108,6 +108,8 @@ p {
 
 .cell .cell-wrap:hover img {
     transform: scale(1.1);
+    opacity: 0.05;
+    transition: 0.3s all ease-in-out;
 }
 
 .cell .cell-wrap:hover {
@@ -139,7 +141,7 @@ p {
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
-    transition: 0.3s all ease;
+    transition: all 0.2s ease-in-out;
     visibility: hidden;
     width: 100%;
     z-index: 3;
