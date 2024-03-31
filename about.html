@@ -61,8 +61,9 @@
             </div>
 
             <div class="row" data-aos="fade-up">
-                <div class="col-md-4 ml-auto order-2" data-aos="flip-up">
-                    <p><img src="assets/img/profile.png" alt="Image" class="img-fluid rounded small-img"></p>
+                <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
+                    <!-- <p><img id="profile-picture" src="" alt="Profile Picture" class="img-fluid rounded small-img"></p> -->
+                    <p><img src="assets/img/profile.png" alt="Image" class="img-fluid rounded-circle small-img"></p>
                 </div>
 
                 <div class="col-md-7 mb-5 mb-md-0" data-aos="fade-up-right">
@@ -111,6 +112,18 @@
 
     <script src="assets/aos/aos.js"></script>
     <!-- <script src="assets/js/script.js"></script> -->
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            fetch('https://api.github.com/users/haicanberra')
+                .then(response => response.json())
+                .then(data => {
+                    const profilePicture = document.getElementById('profile-picture');
+                    profilePicture.src = data.avatar_url;
+                })
+                .catch(error => console.error('Error fetching profile picture:', error));
+        });
+    </script>
 
     <script>
         var nav_items = document.getElementsByClassName("nav-item")
