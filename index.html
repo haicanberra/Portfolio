@@ -14,13 +14,18 @@
 
 <body id="top">
     <header>
-        <h1>Personal Portfolio</h1>
+        <h1>Manh-Hai Hoang</h1>
         <div align="center">
             <img src="assets/profile.png" alt="Manh-Hai Hoang" width="200" />
         </div>
         <p class="author">
-            Manh-Hai Hoang<br />
-            October 2024
+            University of Alberta, Edmonton, Canada<br>
+            <a href="mailto:hmhoang@ualberta.ca">
+                hmhoang@ualberta.ca
+            </a><br>
+            <a href="https://haicanberra.github.io/">Personal Website</a> &mdash; <a
+                href="https://www.linkedin.com/in/manhhaihoang/">LinkedIn</a><br>
+            <span id="monthyear"></span>
         </p>
     </header>
 
@@ -129,6 +134,7 @@
                     </tr> -->
                 </tbody>
             </table>
+
         </article>
     </main>
 
@@ -181,6 +187,22 @@
             .catch(error => {
                 console.error("Error fetching repositories:", error);
             });
+    </script>
+
+    <script>
+        function updateCurrentMonthYear() {
+            const months = [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+            const now = new Date();
+            const currentMonth = months[now.getMonth()];
+            const currentYear = now.getFullYear();
+            const displayText = `${currentMonth} ${currentYear}`;
+            document.getElementById("monthyear").textContent = displayText;
+        }
+
+        document.addEventListener('DOMContentLoaded', updateCurrentMonthYear);
     </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
