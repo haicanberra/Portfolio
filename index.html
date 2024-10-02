@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="tm5Y6ZNTf-lBqbwniGjQPv1q02o2TuUQZ9GTYa4SMLg" />
     <title>Manh-Hai Hoang</title>
-
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <link rel="stylesheet" href="https://latex.vercel.app/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="prism/prism.css" />
@@ -15,12 +15,15 @@
 <body id="top">
     <header>
         <h1>Personal Portfolio</h1>
+        <div align="center">
+            <img src="assets/profile.png" alt="Manh-Hai Hoang" width="200" />
+        </div>
         <p class="author">
             Manh-Hai Hoang<br />
             October 2024
         </p>
     </header>
-    <!-- <img src="profile.png" loading="lazy" alt="Mountain landscape" width="150" height="300" /> -->
+
     <div class="abstract">
         <h2>Abstract</h2>
         <p>
@@ -156,7 +159,6 @@
                     const repoLink = repo.html_url;
                     const thumbnailUrl = `${repo.html_url}/raw/main/assets/thumbnail.png`;
 
-                    // Fetch languages for the current repository
                     const languagesUrl = repo.languages_url;
                     const languagesResponse = await fetch(languagesUrl);
                     const languagesData = await languagesResponse.json();
