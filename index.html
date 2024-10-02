@@ -1,93 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="tm5Y6ZNTf-lBqbwniGjQPv1q02o2TuUQZ9GTYa4SMLg" />
     <title>Manh-Hai Hoang</title>
 
-    <!-- Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <!-- Bootstrap's -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="assets/aos/aos.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="favicon.ico">
-
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="prism/prism.css" />
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <div class="d-flex flex-grow-1">
-                <a class="navbar-brand" href="index.html">Manh-Hai Hoang</a>
-            </div>
-            <div class="navbar-collapse flex-grow-1 text-center" id="myNavbar7">
-                <ul class="navbar-nav ms-auto flex-nowrap">
-                    <li class="nav-item">
-                        <a class="nav-link current" href="index.html" id="projects"
-                            onclick="opennav('projects')">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html" id="about" onclick="opennav('about')">About</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a href="#" class="nav-link">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Link</a>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
+<body id="top">
+    <header>
+        <h1>Personal Portfolio</h1>
+        <p class="author">
+            Manh-Hai Hoang<br />
+            October 2024
+        </p>
+    </header>
+    <!-- <img src="profile.png" loading="lazy" alt="Mountain landscape" width="150" height="300" /> -->
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <p>
+            I am always fascinated by unfamiliar knowledge and asking dumb questions, so please
+            pardon my curiosity. A fun fact that I came across the other day: <em>Six degrees of seperation</em> is a
+            concept suggesting that everyone is connected through six or less acquaintances.<sup><a href="#fn1"
+                    id="ref1">1</a></sup>
+            Personally, I have witnessed such phenomenon quite often, most of which were two connections away. You
+            and I maybe connected in some way too!
+        </p>
+    </div>
+
+    <nav role="navigation" class="toc">
+        <h2>Contents</h2>
+        <ol>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#languages">Programming Languages</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#work">Work Experiences</a></li>
+            <li><a href="#volunteer">Volunteer Experiences</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ol>
     </nav>
 
-    <section class="section">
-        <div class="container">
-            <div class="row mb-5 align-items-end">
-                <div class="col-md-6" data-aos="fade-right">
-                    <h2>Projects</h2>
-                    <p class="mb-0">Freshly fetched from my GitHub!</p>
-                </div>
-            </div>
-            <div class="row no-gutter">
-                <!-- <div class="cell col-sm-6 col-md-4 col-lg-4 mb-4">
-                    <a href="TEMP" class="cell-wrap">
-                        <div class="project-info">
-                            <h2>Title</h2>
-                            <span>Description</span>
-                        </div>
-                        <img class="img-fluid" src="assets/img/gigachad.png">
-                    </a>
-                </div> -->
-            </div>
-        </div>
-    </section>
+    <main>
+        <article>
+            <h2 id="interests">Interests</h2>
+            Machine Learning, Network Science, their theory and humanitarian applications.
 
-    <!-- SCRIPTS -->
-    <script>(function () {
-            "use strict";
-            window.addEventListener('load', () => {
-                AOS.init({
-                    duration: 1000,
-                    easing: 'ease-in-out',
-                    once: true,
-                    mirror: false
-                })
-            });
+            <h2 id="languages">Programming Languages</h2>
+            Python, C++, MATLAB.
 
-        })()
-    </script>
+            <h2 id="education">Education</h2>
+            B.Sc. Specialization in Computing Science, <em>University of Alberta</em>, 2023.
 
-    <script src="assets/aos/aos.js"></script>
-    <!-- <script src="assets/js/script.js"></script> -->
+            <h2 id="awards">Awards</h2>
+            Dean’s Honor Roll, 2019 - 2023. <br>
+            International Student Scholarship, 2019 - 2022. <br>
+            Undergraduate Scholarship, Sep. 2020. <br>
+
+            <h2 id="work">Work Experiences</h2>
+            Project Research Assistant, <em>Hanoi University of Science and Technology</em>, 2023 - now.
+            <ul>
+                <li>Conduct literature reviews, curate data, collaboratively develop the simulation scripts to support
+                    the research methodology and objectives.</li>
+                <li>Manage the execution of multiple program instances, monitor outputs to ensure consistency and
+                    reproducibility across various scenarios.</li>
+                <li>Collaborate on project deliverables including graphical visualizations, manuscript and
+                    presentations.</li>
+            </ul>
+
+            <h2 id="volunteer">Volunteer Experiences</h2>
+            Event Assistant, <em>NeurAlbertaTech</em>, 2022. <br>
+            Event Assistant, <em>Alberta Beer Festivals</em>, 2022. <br>
+            Concession Attendant, <em>Freewill Shakespear Festival</em>, 2022. <br>
+
+            <h2 id="publications">Publications</h2>
+            Thang Manh Hoang, <mark>Manh-Hai Hoang</mark>, and Quang-Anh Pham. “Dynamical Selective Image Encryption
+            Using
+            Chaos”. In: <em>2024 9th International Conference on Integrated Circuits, Design, and Verification
+                (ICDV)</em>. 2024,
+            pp. 67–72. doi: <a
+                href="https://doi.org/10.1109/ICDV61346.2024.10617400">10.1109/ICDV61346.2024.10617400</a>.
+            <br><br>
+            Thang Manh Hoang, Quang-Anh Pham, <mark>Manh-Hai Hoang</mark>, Do Quang Tran, and Safwan El Assad. “Chaotic
+            Multiple-image Encryption and Individual-image Decryption with FPGA Implementation”. In: <em>2024 9th
+                International Conference on Integrated Circuits, Design, and Verification (ICDV)</em>. 2024, pp. 61–66.
+            doi: <a href="https://doi.org/10.1109/ICDV61346.2024.10617030">10.1109/
+                ICDV61346.2024.10617030</a>.
+            <br><br>
+            Thang Manh Hoang, Dinh-Duc Vu, and <mark>Manh-Hai Hoang</mark>. “Classification of Electroencephalography
+            Signals
+            with Auditory Stimuli using Complex Network”. In: <em>2024 Tenth International Conference on Communications
+                and Electronics (ICCE)</em>. 2024, pp. 567–572. doi: <a
+                href="https://doi.org/10.1109/ICCE62051.2024.10634689">10.1109/ICCE62051.2024.10634689</a>.
+            <br><br>
+            Do Tran Quang, Ta Thi Kim Hue, Nguyen Xuan Quyen, Nguyen Tung Anh, <mark>Manh-Hai Hoang</mark>, and Thang
+            Manh Hoang. “Effective Consensus Computation for Public Blockchain in Small-World Network Environment”.
+            In: <em>2024 Tenth International Conference on Communications and Electronics (ICCE)</em>. 2024, pp.
+            451–456. doi:
+            <a href="https://doi.org/10.1109/ICCE62051.2024.10634707">10.1109/ICCE62051.2024.10634707</a>.
+
+            <h2 id="projects">Projects</h2>
+            <table class="borders-custom">
+                <!-- <caption>A sample table with a descriptive caption.</caption> -->
+                <tbody id="projects-table-tbody">
+                    <!-- <tr>
+                        <td>Pic</td>
+                        <td>Name</td>
+                        <td>Description 3</td>
+                    </tr>
+                    <tr>
+                        <td>Description 1</td>
+                        <td>Description 2</td>
+                        <td>Description 3</td>
+                    </tr>
+                    <tr>
+                        <td>Description 1</td>
+                        <td>Description 2</td>
+                        <td>Description 3</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </article>
+    </main>
+
+    <div class="footnotes">
+        <p id="fn1">
+            1. From
+            <a
+                href="https://en.wikipedia.org/wiki/Six_degrees_of_separation">https://en.wikipedia.org/wiki/Six_degrees_of_separation</a>.
+            <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a>
+        </p>
+    </div>
+
     <script>
         const user = "haicanberra";
         const topic = "project";
@@ -95,69 +145,65 @@
 
         fetch(apiUrl)
             .then(response => response.json())
-            .then(data => {
+            .then(async data => {
                 const repos = data.filter(repo => repo.topics.includes(topic));
-
                 repos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
                 let htmlSnippet = "";
-                repos.forEach(repo => {
-                    const repoTitle = repo.name.replace(/-/g, " ");;
-                    // const repoDescription = repo.description ? repo.description.replace(/:white_check_mark:/g, "✅") : "";
+                for (const repo of repos) {
+                    const repoTitle = repo.name.replace(/-/g, " ");
                     const repoDescription = repo.description.replace(/:white_check_mark:/g, "");
                     const repoLink = repo.html_url;
                     const thumbnailUrl = `${repo.html_url}/raw/main/assets/thumbnail.png`;
 
+                    // Fetch languages for the current repository
+                    const languagesUrl = repo.languages_url;
+                    const languagesResponse = await fetch(languagesUrl);
+                    const languagesData = await languagesResponse.json();
+                    const languages = Object.keys(languagesData).join(", ");
+
                     const repoHtml = `
-        <div class="cell col-sm-6 col-md-4 col-lg-4 mb-4">
-          <a href="${repoLink}" target="_blank" class="cell-wrap">
-            <div class="project-info">
-              <h2>${repoTitle}</h2>
-              <span>${repoDescription}</span>
-            </div>
-            <img class="img-fluid rounded" src="${thumbnailUrl}">
-          </a>
-        </div>
-      `;
-
+            <tr>
+                <td><img src="${thumbnailUrl}" width="250"></td>
+                <td><a href="${repoLink}">${repoTitle}</a></td>
+                <td>${repoDescription}</td>
+                <td>${languages}</td>
+            </tr>
+            `;
                     htmlSnippet += repoHtml;
-                });
+                }
 
-                const sectionContainer = document.querySelector('.section .container');
-                const existingRow = sectionContainer.querySelector('.row.no-gutter');
-                const newRow = document.createElement('div');
-                newRow.classList.add('row', 'no-gutter');
-                newRow.setAttribute('data-aos', 'fade-up-right');
-                // newRow.setAttribute('data-aos-delay', '2000');
-                newRow.innerHTML = htmlSnippet;
-                sectionContainer.replaceChild(newRow, existingRow);
+                const sectionContainer = document.querySelector('#projects-table-tbody');
+                sectionContainer.innerHTML = htmlSnippet;
             })
             .catch(error => {
                 console.error("Error fetching repositories:", error);
             });
     </script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        var nav_items = document.getElementsByClassName("nav-item")
-        function opennav(aName) {
-            for (nav_i of nav_items) {
-                nav_i.classList.remove("current")
-            }
-            event.currentTarget.classList.add("current")
-            document.getElementById(aName).classList.add("current")
-        }
+        AOS.init();
     </script>
 
-    <!-- Bootstrap's -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-        crossorigin="anonymous"></script>
-</body>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'],],
+            },
+        }
+        const typeFaceToggle = document.getElementById('typeface-toggle')
+        const typeface = document.getElementById('typeface')
+        typeFaceToggle.addEventListener('click', () => {
+            document.body.classList.toggle('libertinus')
+            typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+        })
 
-</html>
+        const darkModeToggle = document.getElementById('dark-mode-toggle')
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('latex-dark')
+        })
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async src="prism/prism.js"></script>
+</body>
