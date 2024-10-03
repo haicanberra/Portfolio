@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://latex.vercel.app/style.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="prism/prism.css" />
+    <link rel="stylesheet" href="index.css" />
+
 </head>
 
 <body id="top">
@@ -19,13 +21,7 @@
             <img src="assets/profile.png" alt="Manh-Hai Hoang" width="200" />
         </div>
         <p class="author">
-            University of Alberta, Edmonton, Canada<br>
-            <a href="mailto:hmhoang@ualberta.ca">
-                hmhoang@ualberta.ca
-            </a><br>
-            <a href="https://www.linkedin.com/in/manhhaihoang/">LinkedIn</a> &mdash; <a
-                href="https://github.com/haicanberra">GitHub</a> &mdash; <a
-                href="https://haicanberra.github.io/">Personal Website</a><br>
+            Edmonton, Canada<br>
             <span id="monthyear"></span>
         </p>
     </header>
@@ -54,6 +50,7 @@
             <li><a href="#certificates">Certificates</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ol>
     </nav>
 
@@ -137,19 +134,30 @@
                         <td>Pic</td>
                         <td>Name</td>
                         <td>Description 3</td>
-                    </tr>
-                    <tr>
-                        <td>Description 1</td>
-                        <td>Description 2</td>
-                        <td>Description 3</td>
-                    </tr>
-                    <tr>
-                        <td>Description 1</td>
-                        <td>Description 2</td>
-                        <td>Description 3</td>
                     </tr> -->
                 </tbody>
             </table>
+
+            <!-- --------------------------------------------------------------------------- -->
+            <h2 id="contacts">Contacts</h2>
+            <i class="fa-solid fa-envelope fa-fw" style="color: #275D38; margin-top: 0px;"></i> <a target="_blank"
+                rel="noopener noreferrer" onclick="copy('hmhoang@ualberta.ca')"
+                style="cursor: pointer; text-decoration: underline;">University
+                Email
+            </a><br>
+            <i class="fa-solid fa-envelope fa-fw" style="color: #c71610; margin-top: 0px;"></i> <a target="_blank"
+                rel="noopener noreferrer" onclick="copy('haicanberra@gmail.com')"
+                style="cursor: pointer; text-decoration: underline;">Personal
+                Email
+            </a><br>
+            <i class="fa-brands fa-google-scholar fa-fw" style="color: #76a7fa; margin-top: 0px;"></i> <a
+                target="_blank" rel="noopener noreferrer"
+                href="https://scholar.google.com/citations?hl=en&user=pDDHWV8AAAAJ">Google Scholar</a><br>
+            <i class="fa-brands fa-linkedin fa-fw" style="color: #007bb6; margin-top: 0px;"></i> <a target="_blank"
+                rel="noopener noreferrer" href="https://www.linkedin.com/in/manhhaihoang/">LinkedIn</a><br>
+            <i class="fa-brands fa-github fa-fw" style="color: #171516; margin-top: 0px;"></i> <a target="_blank"
+                rel="noopener noreferrer" href="https://github.com/haicanberra">GitHub</a><br>
+
         </article>
     </main>
 
@@ -259,6 +267,32 @@
         AOS.init();
     </script> -->
 
+    <div id="snackbar">Some text some message..</div>
+    <script>
+        function copy(customText) {
+            var inp = document.createElement('input');
+            document.body.appendChild(inp);
+            inp.value = customText;
+            inp.select();
+            document.execCommand('copy', false);
+            inp.remove();
+            var snackbar = document.getElementById("snackbar");
+            snackbar.innerHTML = "Copied: " + customText;
+            snackbar.className = "show";
+            setTimeout(function () {
+                snackbar.className = snackbar.className.replace("show", "");
+            }, 2000);
+            // navigator.clipboard.writeText(that.textContent).then(
+            //     function () {
+            //         alert("Text copied to clipboard!");
+            //     },
+            //     function () {
+            //         alert("Failed to copy text");
+            //     }
+            // );
+        }
+    </script>
+
     <script>
         MathJax = {
             tex: {
@@ -277,6 +311,8 @@
             document.body.classList.toggle('latex-dark')
         })
     </script>
+
+    <script src="https://kit.fontawesome.com/0f74256c8a.js" crossorigin="anonymous"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async src="prism/prism.js"></script>
 </body>
