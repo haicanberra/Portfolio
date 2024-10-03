@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="tm5Y6ZNTf-lBqbwniGjQPv1q02o2TuUQZ9GTYa4SMLg" />
     <title>Manh-Hai Hoang</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="https://latex.vercel.app/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="prism/prism.css" />
 </head>
 
@@ -23,8 +23,9 @@
             <a href="mailto:hmhoang@ualberta.ca">
                 hmhoang@ualberta.ca
             </a><br>
-            <a href="https://haicanberra.github.io/">Personal Website</a> &mdash; <a
-                href="https://www.linkedin.com/in/manhhaihoang/">LinkedIn</a><br>
+            <a href="https://www.linkedin.com/in/manhhaihoang/">LinkedIn</a> &mdash; <a
+                href="https://github.com/haicanberra">GitHub</a> &mdash; <a
+                href="https://haicanberra.github.io/">Personal Website</a><br>
             <span id="monthyear"></span>
         </p>
     </header>
@@ -47,9 +48,10 @@
             <li><a href="#interests">Interests</a></li>
             <li><a href="#languages">Programming Languages</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#awards">Awards</a></li>
             <li><a href="#work">Work Experiences</a></li>
             <li><a href="#volunteer">Volunteer Experiences</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#certificates">Certificates</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#projects">Projects</a></li>
         </ol>
@@ -57,20 +59,20 @@
 
     <main>
         <article>
+
+            <!-- --------------------------------------------------------------------------- -->
             <h2 id="interests">Interests</h2>
             Machine Learning, Network Science, their theory and humanitarian applications.
 
+            <!-- --------------------------------------------------------------------------- -->
             <h2 id="languages">Programming Languages</h2>
             Python, C++, MATLAB.
 
+            <!-- --------------------------------------------------------------------------- -->
             <h2 id="education">Education</h2>
             B.Sc. Specialization in Computing Science, <em>University of Alberta</em>, 2023.
 
-            <h2 id="awards">Awards</h2>
-            Dean’s Honor Roll, 2019 - 2023. <br>
-            International Student Scholarship, 2019 - 2022. <br>
-            Undergraduate Scholarship, Sep. 2020. <br>
-
+            <!-- --------------------------------------------------------------------------- -->
             <h2 id="work">Work Experiences</h2>
             Project Research Assistant, <em>Hanoi University of Science and Technology</em>, 2023 - now.
             <ul>
@@ -82,11 +84,24 @@
                     presentations.</li>
             </ul>
 
+            <!-- --------------------------------------------------------------------------- -->
             <h2 id="volunteer">Volunteer Experiences</h2>
             Event Assistant, <em>NeurAlbertaTech</em>, 2022. <br>
             Event Assistant, <em>Alberta Beer Festivals</em>, 2022. <br>
             Concession Attendant, <em>Freewill Shakespear Festival</em>, 2022. <br>
 
+            <!-- --------------------------------------------------------------------------- -->
+            <h2 id="awards">Awards</h2>
+            Dean’s Honor Roll, <em>University of Alberta</em>, 2019 - 2023. <br>
+            International Student Scholarship, <em>University of Alberta</em>, 2019 - 2022. <br>
+            Undergraduate Scholarship, <em>University of Alberta</em>, 2020. <br>
+
+            <!-- --------------------------------------------------------------------------- -->
+            <h2 id="certificates">Certificates</h2>
+            Reinforcement Learning Specialization, <em>Coursera</em>. <br>
+            Office Excel®, <em>Microsoft Office Specialist</em>.
+
+            <!-- --------------------------------------------------------------------------- -->
             <h2 id="publications">Publications</h2>
             Thang Manh Hoang, <mark>Manh-Hai Hoang</mark>, and Quang-Anh Pham. “Dynamical Selective Image Encryption
             Using
@@ -113,6 +128,7 @@
             451–456. doi:
             <a href="https://doi.org/10.1109/ICCE62051.2024.10634707">10.1109/ICCE62051.2024.10634707</a>.
 
+            <!-- --------------------------------------------------------------------------- -->
             <h2 id="projects">Projects</h2>
             <table class="borders-custom">
                 <!-- <caption>A sample table with a descriptive caption.</caption> -->
@@ -134,7 +150,6 @@
                     </tr> -->
                 </tbody>
             </table>
-
         </article>
     </main>
 
@@ -172,7 +187,7 @@
 
                     const repoHtml = `
             <tr>
-                <td><img src="${thumbnailUrl}" width="250"></td>
+                <td><a href="${repoLink}"><img src="${thumbnailUrl}" width="250"></a></td>
                 <td><a href="${repoLink}">${repoTitle}</a></td>
                 <td>${repoDescription}</td>
                 <td>${languages}</td>
@@ -205,10 +220,44 @@
         document.addEventListener('DOMContentLoaded', updateCurrentMonthYear);
     </script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Back to top." style="display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: 1px groove #1b1818;
+    outline: none;
+    background-color: #f9fafb;
+    border-color: #1b1818;
+    color: #1b1818;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 25px;">⇧</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script> -->
+
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
+    </script> -->
 
     <script>
         MathJax = {
